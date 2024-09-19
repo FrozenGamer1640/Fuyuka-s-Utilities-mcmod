@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "fuyukas_utilities:item/levitation_wand_16x16"
+  }
+}

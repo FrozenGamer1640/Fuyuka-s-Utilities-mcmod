@@ -1,0 +1,38 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "fuyukas_utilities:item/custom_wand_empty"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "fuyukas_utilities:custom_wand_isimpulse": 1
+      },
+      "model": "fuyukas_utilities:item/custom_wand_0"
+    },
+    {
+      "predicate": {
+        "fuyukas_utilities:custom_wand_isrepeat": 1
+      },
+      "model": "fuyukas_utilities:item/custom_wand_1"
+    },
+    {
+      "predicate": {
+        "fuyukas_utilities:custom_wand_ischained": 1
+      },
+      "model": "fuyukas_utilities:item/custom_wand_2"
+    },
+    {
+      "predicate": {
+        "fuyukas_utilities:custom_wand_islevitate": 1
+      },
+      "model": "fuyukas_utilities:item/custom_wand_3"
+    },
+    {
+      "predicate": {
+        "fuyukas_utilities:custom_wand_isrepeatactive": 1
+      },
+      "model": "fuyukas_utilities:item/custom_wand_4"
+    }
+  ]
+}

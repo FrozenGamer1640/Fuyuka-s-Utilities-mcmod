@@ -1,0 +1,777 @@
+{
+  "mod_elements": [
+    {
+      "name": "XtraTools",
+      "type": "tab",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xtra_tools",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "TriviaWand",
+      "type": "item",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trivia_wand",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fuyukasutilities/item/TriviaWandItem.java",
+          "src/main/resources/assets/fuyukas_utilities/models/item/trivia_wand.json"
+        ]
+      },
+      "path": "~/Wands"
+    },
+    {
+      "name": "TriviaToggle",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trivia_toggle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fuyukasutilities/procedures/TriviaToggleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Wands"
+    },
+    {
+      "name": "SetTriviaPosP",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_trivia_pos_p",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fuyukasutilities/procedures/SetTriviaPosPProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands"
+    },
+    {
+      "name": "Fuyutils",
+      "type": "command",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuyutils",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fuyukasutilities/command/FuyutilsCommand.java"
+        ]
+      },
+      "path": "~/Commands"
+    },
+    {
+      "name": "CustomWand",
+      "type": "item",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_wand",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fuyukas_utilities/models/item/custom_wand_1.json",
+          "src/main/resources/assets/fuyukas_utilities/models/item/custom_wand_4.json",
+          "src/main/resources/assets/fuyukas_utilities/models/item/custom_wand.json",
+          "src/main/resources/assets/fuyukas_utilities/models/item/custom_wand_3.json",
+          "src/main/resources/assets/fuyukas_utilities/models/item/custom_wand_2.json",
+          "src/main/resources/assets/fuyukas_utilities/models/item/custom_wand_0.json",
+          "src/main/java/net/mcreator/fuyukasutilities/item/CustomWandItem.java"
+        ]
+      },
+      "path": "~/Wands"
+    },
+    {
+      "name": "IsCurrentCustomWandImpulse",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_current_custom_wand_impulse",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/fuyukasutilities/procedures/IsCurrentCustomWandImpulseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Wands"
+    },
+    {
+      "name": "IsCurrentCustomWandRepeat",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_current_custom_wand_repeat",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/fuyukasutilities/procedures/IsCurrentCustomWandRepeatProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Wands"
+    },
+    {
+      "name": "IsCurrentCustomWandChained",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_current_custom_wand_chained",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/fuyukasutilities/procedures/IsCurrentCustomWandChainedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Wands"
+    },
+    {
+      "name": "CustomWandHasItemGlowingEffect",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_wand_has_item_glowing_effect",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/fuyukasutilities/procedures/CustomWandHasItemGlowingEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Wands"
+    },
+    {
+      "name": "SetCustomWandImpulseCommand",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_custom_wand_impulse_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fuyukasutilities/procedures/SetCustomWandImpulseCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Commands"
+    },
+    {
+      "name": "CustomWandRightclicked",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_wand_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fuyukasutilities/procedures/CustomWandRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands"
+    },
+    {
+      "name": "IsCurrentCustomWandLevitate",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_current_custom_wand_levitate",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/fuyukasutilities/procedures/IsCurrentCustomWandLevitateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Wands"
+    },
+    {
+      "name": "SetCustomWandRepeatCommand",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_custom_wand_repeat_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fuyukasutilities/procedures/SetCustomWandRepeatCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Commands"
+    },
+    {
+      "name": "CustomWandItemInInventoryTick",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_wand_item_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fuyukasutilities/procedures/CustomWandItemInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Wands"
+    },
+    {
+      "name": "IsCurrentCustomWandRepeatActive",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_current_custom_wand_repeat_active",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/fuyukasutilities/procedures/IsCurrentCustomWandRepeatActiveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Wands"
+    },
+    {
+      "name": "SetCustomWandChainedCommand",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_custom_wand_chained_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fuyukasutilities/procedures/SetCustomWandChainedCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Commands"
+    },
+    {
+      "name": "CheckCurrentCustomWandProperties",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_current_custom_wand_properties",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fuyukasutilities/procedures/CheckCurrentCustomWandPropertiesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Commands"
+    },
+    {
+      "name": "OverridePlayerPermsP",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "override_player_perms_p",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fuyukasutilities/procedures/OverridePlayerPermsPProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands"
+    },
+    {
+      "name": "RemoveCustomWandChainedCommand",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "remove_custom_wand_chained_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fuyukasutilities/procedures/RemoveCustomWandChainedCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Commands"
+    },
+    {
+      "name": "EditCustomWandChainedCommand",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "edit_custom_wand_chained_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fuyukasutilities/procedures/EditCustomWandChainedCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Commands"
+    },
+    {
+      "name": "TpSwapWand",
+      "type": "item",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tp_swap_wand",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fuyukas_utilities/models/item/tp_swap_wand.json",
+          "src/main/resources/assets/fuyukas_utilities/models/item/tp_swap_wand_1.json",
+          "src/main/java/net/mcreator/fuyukasutilities/item/TpSwapWandItem.java",
+          "src/main/resources/assets/fuyukas_utilities/models/item/tp_swap_wand_0.json"
+        ]
+      },
+      "path": "~/Wands"
+    },
+    {
+      "name": "TpSwapWandRightclicked",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tp_swap_wand_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fuyukasutilities/procedures/TpSwapWandRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Wands"
+    },
+    {
+      "name": "RayCastCustomMob",
+      "type": "livingentity",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ray_cast_custom_mob",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fuyukasutilities/entity/RayCastCustomMobEntity.java",
+          "src/main/java/net/mcreator/fuyukasutilities/client/renderer/RayCastCustomMobRenderer.java"
+        ]
+      },
+      "path": "~/Wands"
+    },
+    {
+      "name": "FuyutilsTooltips",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuyutils_tooltips",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fuyukasutilities/procedures/FuyutilsTooltipsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CloneItemP",
+      "type": "procedure",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clone_item_p",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fuyukasutilities/procedures/CloneItemPProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Commands"
+    },
+    {
+      "name": "TpSwapToggleMode",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tp_swap_toggle_mode",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fuyukasutilities/procedures/TpSwapToggleModeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands"
+    },
+    {
+      "name": "TpSwap__TeamModeCursor1",
+      "type": "procedure",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tp_swap__team_mode_cursor_1",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/fuyukasutilities/procedures/TpSwap__TeamModeCursor1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Wands"
+    },
+    {
+      "name": "TpSwap__TeamModeCursor2",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tp_swap__team_mode_cursor_2",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/fuyukasutilities/procedures/TpSwap__TeamModeCursor2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Wands"
+    },
+    {
+      "name": "CleanNullEntitiesFromTargetArrays",
+      "type": "procedure",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clean_null_entities_from_target_arrays",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fuyukasutilities/procedures/CleanNullEntitiesFromTargetArraysProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Wands"
+    },
+    {
+      "name": "TpSwapConfirm",
+      "type": "procedure",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tp_swap_confirm",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fuyukasutilities/procedures/TpSwapConfirmProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Wands"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "isTriviaActive",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "triviaPos",
+      "type": "string",
+      "scope": "map",
+      "value": "\"null\""
+    },
+    {
+      "name": "triviaDim",
+      "type": "string",
+      "scope": "map",
+      "value": "\"minecraft:overworld\""
+    },
+    {
+      "name": "OverridePlayerPerms",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "RaycastUUID",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "isAWandBeingUsed",
+      "type": "logic",
+      "scope": "global",
+      "value": "false"
+    },
+    {
+      "name": "TpSwapTargets1",
+      "type": "arraylist",
+      "scope": "global",
+      "value": "new ArrayList\u003c\u003e()"
+    },
+    {
+      "name": "TpSwapTargets2",
+      "type": "arraylist",
+      "scope": "global",
+      "value": "new ArrayList\u003c\u003e()"
+    },
+    {
+      "name": "TpSwap_TeamMode",
+      "type": "logic",
+      "scope": "global",
+      "value": "false"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {},
+  "language_map": {
+    "en_us": {
+      "entity.fuyukas_utilities.ray_cast_custom_mob": "Ray Cast Custom Mob",
+      "item.fuyukas_utilities.trivia_wand": "Trivia Wand",
+      "item.fuyukas_utilities.tp_swap_wand": "Tp Swap Wand",
+      "item_group.fuyukas_utilities.xtra_tools": "Fuyuka\u0027s Utilities",
+      "item.fuyukas_utilities.custom_wand": "Custom Wand"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Commands",
+        "children": []
+      },
+      {
+        "name": "Wands",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "fuyukas_utilities",
+    "modName": "Fuyuka\u0027s Utilities",
+    "version": "1.0.0",
+    "description": "Just an abandoned utility mod for mc servers",
+    "author": "Fuyuka, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "MIT License",
+    "serverSideOnly": false,
+    "modPicture": "fuyukas_uitlities_icon_1.0",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.fuyukasutilities"
+  },
+  "mcreatorVersion": 202400118518
+}

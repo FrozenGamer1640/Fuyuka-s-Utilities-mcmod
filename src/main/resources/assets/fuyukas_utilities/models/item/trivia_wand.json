@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "fuyukas_utilities:item/trivia_toggle_wand_16x16"
+  }
+}

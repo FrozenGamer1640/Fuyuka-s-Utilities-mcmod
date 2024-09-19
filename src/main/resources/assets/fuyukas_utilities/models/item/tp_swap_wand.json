@@ -1,0 +1,22 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "fuyukas_utilities:item/tpswap_wand_16x16"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "fuyukas_utilities:tp_swap_wand_teammodecursor1": 1,
+        "fuyukas_utilities:tp_swap_wand_teammodecursor2": 0
+      },
+      "model": "fuyukas_utilities:item/tp_swap_wand_0"
+    },
+    {
+      "predicate": {
+        "fuyukas_utilities:tp_swap_wand_teammodecursor1": 0,
+        "fuyukas_utilities:tp_swap_wand_teammodecursor2": 1
+      },
+      "model": "fuyukas_utilities:item/tp_swap_wand_1"
+    }
+  ]
+}

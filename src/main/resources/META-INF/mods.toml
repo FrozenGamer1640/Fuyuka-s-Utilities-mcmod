@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT License"
+
+[[mods]]
+modId="fuyukas_utilities"
+version="1.0.0"
+displayName="Fuyuka's Utilities"
+displayURL="https://mcreator.net"
+logoFile="logo.png"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+authors="Fuyuka, MCreator"
+description="Just an abandoned utility mod for mc servers"
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+[[dependencies.fuyukas_utilities]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
